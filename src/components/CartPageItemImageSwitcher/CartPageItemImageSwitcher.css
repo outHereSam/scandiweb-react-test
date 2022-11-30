@@ -1,0 +1,49 @@
+.photo-switcher {
+    width: 200px;
+    height: 288px;
+    position: relative;
+}
+
+.photo-switcher img {
+    height: 100%;
+}
+
+.switcher-buttons {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.switcher-buttons button {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.73);
+}
+
+button.left-button {
+    background-image: url('../../assets/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button.right-button {
+    background-image: url('../../assets/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dimmed-button-left {
+    background-image: url('../../assets/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.dimmed-button-right {
+    background-image: url('../../assets/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+}

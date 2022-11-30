@@ -1,0 +1,35 @@
+
+.headerContainer {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 0;
+    position: relative;
+}
+
+.navLinks {
+    text-decoration: none;
+    color: #1D1F22;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+.navLinks:hover {
+    color: #5ECE7B;
+}
+
+.options {
+    display: flex;
+    gap: 22px;
+}

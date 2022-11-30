@@ -1,0 +1,107 @@
+.productPage {
+    display: flex;
+    gap: 100px;
+    margin-top: 80px;
+    padding: 0 0 80px 0;
+}
+
+.infoSection .brandName {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+.infoSection .productName {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.attributes {
+    margin-top: 43px;
+}
+
+.attribName {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.textAttrib {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 38px;
+}
+
+.textAttrib div {
+    border: solid 1px #1D1F22;
+    width: 63px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.textAttrib div:hover {
+    border: none;
+    background-color: #1D1F22;
+    color: #FFFFFF;
+}
+
+.swatchAttrib {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 38px;
+}
+
+.swatch {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.swatch:hover {
+    border: solid 1px #5ECE7B;
+}
+
+.addToCart {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #5ECE7B;
+    border: none;
+    padding: 16px 0;
+    width: 292px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.addToCart:hover {
+    background-color: #86e19f;
+}
+
+.description {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    border: none;
+    background-color: #1D1F22;
+    color: #FFFFFF;
+}
+
+.selected-swatch {
+    border: solid 1px #5ECE7B;
+}

@@ -1,0 +1,32 @@
+
+.page-name {
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.order-slip {
+    width: 279px;
+    margin: 32px 0 0 0;
+}
+
+.order-slip p {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.order-slip button {
+    height: 43px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.order-btn {
+    width: 280px;
+    padding: 13px 0;
+    background-color: #5ECE7B;
+    text-transform: uppercase;
+    color: #FFF;
+}
