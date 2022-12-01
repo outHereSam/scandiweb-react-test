@@ -144,6 +144,13 @@ export default class Attributes extends PureComponent {
                                 Add To Cart
                             </button>
                             }
+
+                            <button 
+                            className={product.inStock && selectedAttributes.length === product.attributes?.length  ? "addToCart" : "hidden"}
+                            onClick={() => addToCart(product.id, { selectedAttributes: selectedAttributes, selectedSwatch: selectedSwatch })}
+                            >
+                                Add To Cart
+                            </button>
             
                             
             

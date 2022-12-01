@@ -64,3 +64,44 @@
 .hidden {
     display: none;
 }
+
+/* .add-to-cart {
+    width: 52px;
+    height: 52px;
+    background-color: #5ECE7B;
+    border-radius: 50%;
+    background-image: url('../../assets/cart-white.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+    position: absolute;
+    bottom: 72px;
+    right: 31px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+    border: solid 1px pink;
+  } */
+
+.add-to-cart {
+    width: 52px;
+    height: 52px;
+    background-color: #5ECE78;
+    border-radius: 50%;
+    background-image: url('../../assets/cart-white.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+    position: absolute;
+    bottom: 72px;
+    right: 31px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.item:hover .add-to-cart {
+    opacity: 1;
+}

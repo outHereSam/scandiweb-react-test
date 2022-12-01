@@ -3,6 +3,7 @@ import { getProductsByCategoryName } from "../../graphql/queries";
 import './ProductList.css';
 import { Link } from "react-router-dom";
 import { CurrencyConsumer } from "../../context/CurrencyContext";
+import CartContext from "../../context/CartContext";
 
 export default class ProductList extends PureComponent {
     constructor(props) {
@@ -12,6 +13,8 @@ export default class ProductList extends PureComponent {
             products: [],
         }; 
     }
+
+    static contextType = CartContext;
 
 
     componentDidMount() {
@@ -31,6 +34,7 @@ export default class ProductList extends PureComponent {
     render() {
         const { products } = this.state;
         const { category } = this.props;
+        const { openCart } = this.context;
 
         return(
             <CurrencyConsumer>
@@ -45,6 +49,9 @@ export default class ProductList extends PureComponent {
                                 {products.map(product => (
                                     <Link className="productLink" to={`/products/${product.id}`} key={product.id}>
                                         <div className="item">
+                                            <div onClick={openCart}     
+                                                className={product.inStock ? "add-to-cart" : "hidden"}
+                                            ></div>
                                             <div className={product.inStock ? "hidden" : "stock-overlay"}>Out of Stock</div>
                                             <img src={product.gallery[0]} alt={product.name} />
                                             <p className="productName">{product.brand} {product.name}</p>
