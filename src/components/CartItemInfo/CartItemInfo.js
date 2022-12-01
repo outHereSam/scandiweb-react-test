@@ -15,7 +15,7 @@ class CartItemInfo extends PureComponent {
                 {product.attributes?.map((attribute, i) => (
                     attribute.type === 'text'?
                     <div key={i} className="text">
-                        <h3>{attribute.name}:</h3>
+                        <h3 className="attrib-name">{attribute.name}:</h3>
                         <div className="text-options">
                         {
                             typeof selectedAttributes.selectedAttributes == 'string' ? 
@@ -31,7 +31,7 @@ class CartItemInfo extends PureComponent {
                     </div>
                     :
                     <div key={i} className="color-swatch">
-                        <h3>{attribute.name}:</h3>
+                        <h3 className="attrib-name">{attribute.name}:</h3>
                         <div className="text-options">
                             {attribute.items.map(item => (
                                 <div
